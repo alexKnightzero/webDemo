@@ -71,7 +71,7 @@ public class test10 {
 
     @AfterMethod
     public void closeBroser(){
-        webDriver.quit();
+        //webDriver.quit();
         System.out.println("after线程" + Thread.currentThread().getId());
     }
 }
