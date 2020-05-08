@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Custom suite]" parallel="classes">
+  <test name="webDriverTest01(failed)" parallel="classes">
+    <classes>
+      <class name="thread.test09">
+        <methods>
+          <include name="m"/>
+          <include name="test2"/>
+          <include name="openBroser"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- thread.test09 -->
+      <class name="thread.test07">
+        <methods>
+          <include name="test"/>
+          <include name="m"/>
+          <include name="openBroser"/>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- thread.test07 -->
+      <class name="thread.test08">
+        <methods>
+          <include name="m"/>
+          <include name="openBroser"/>
+          <include name="test2"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- thread.test08 -->
+    </classes>
+  </test> <!-- webDriverTest01(failed) -->
+</suite> <!-- Failed suite [Custom suite] -->
