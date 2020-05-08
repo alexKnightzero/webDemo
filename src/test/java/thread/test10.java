@@ -21,9 +21,9 @@ public class test10 {
     @BeforeMethod
     public  void openBroser() throws MalformedURLException {
         //System.setProperty("webdriver.chrome.driver","C:\\Users\\User\\IdeaProjects\\webDemo\\driver\\chromedriver.exe");
-        DesiredCapabilities desiredCapabilities=DesiredCapabilities.chrome();
-        webDriver= new RemoteWebDriver(new URL("http://192.168.1.23:4444/wd/hub"),desiredCapabilities);
-        webDriver.get("http://www.baidu.com");
+//        DesiredCapabilities desiredCapabilities=DesiredCapabilities.chrome();
+//        webDriver= new RemoteWebDriver(new URL("http://192.168.1.23:4444/wd/hub"),desiredCapabilities);
+//        webDriver.get("http://www.baidu.com");
         System.out.println("before线程" + Thread.currentThread().getId());
     }
 
@@ -39,26 +39,26 @@ public class test10 {
     @Test(dataProvider = "word")
     public void test(String word) throws Exception{
 
-        webDriver.findElement(By.id("kw")).sendKeys(word);
-        webDriver.findElement(By.id("su")).click();
-        Thread.sleep(3000);
-        System.out.print(webDriver.getTitle());
-        System.out.print("线程"+Thread.currentThread().getId());
-        Assert.assertEquals(word+"_百度搜索",webDriver.getTitle());
+//        webDriver.findElement(By.id("kw")).sendKeys(word);
+//        webDriver.findElement(By.id("su")).click();
+//        Thread.sleep(3000);
+//        System.out.print(webDriver.getTitle());
+//        System.out.print("线程"+Thread.currentThread().getId());
+//        Assert.assertEquals(word+"_百度搜索",webDriver.getTitle());
 
-
+          System.out.print(word);
 
     }
 
     @Test(dataProvider = "word")
     public void test2(String word) throws Exception{
-
-        webDriver.findElement(By.id("kw")).sendKeys(word);
-        webDriver.findElement(By.id("su")).click();
-        Thread.sleep(3000);
-        System.out.print(webDriver.getTitle());
-        System.out.print("线程"+Thread.currentThread().getId());
-        Assert.assertEquals(word+"_百度搜索",webDriver.getTitle());
+        System.out.print(word);
+//        webDriver.findElement(By.id("kw")).sendKeys(word);
+//        webDriver.findElement(By.id("su")).click();
+//        Thread.sleep(3000);
+//        System.out.print(webDriver.getTitle());
+//        System.out.print("线程"+Thread.currentThread().getId());
+//        Assert.assertEquals(word+"_百度搜索",webDriver.getTitle());
 
 
     }
