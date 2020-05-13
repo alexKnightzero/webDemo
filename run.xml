@@ -24,12 +24,7 @@
       <!--<include name="m"/>-->
         <!--</methods>-->
       <!--</class>-->
-      <class name="thread.test10">
-        <methods>
-          <include name="test"/>
-          <include name="test2"/>
-          <include name="m"/>
-        </methods>
+      <class name="com.run.RunTest">
       </class>
     </classes>
   </test>
